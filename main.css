@@ -1,99 +1,62 @@
-/*Campaign Regular
-
-font-family: campaign, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Campaign Italic
-
-font-family: campaign, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Campaign Bold
-
-font-family: campaign, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Campaign Bold Italic
-
-font-family: campaign, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-
-*/
-
-*{
-	margin: 0%;
-	border: 0%;
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
-.logo{
-	z-index: 1000;
+#contents {
+    width: 100%; 
+    height: 100%; 
+    position: fixed;
+    left: 0px; 
+    top: 0px; 
+    z-index: 1;
 }
 
-.main_image_container{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-
+#contentsAppStore {
+    width: 100%; 
+    height: 100%; 
+    position: fixed;
+    left: 0px; 
+    top: 0px; 
+     z-index: 2;
 }
 
-.logo_half{
-  width: 50vw;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  z-index: 100;
+#contentsPlayStore {
+    width: 100%; 
+    height: 100%; 
+    position: fixed;
+    left: 0px; 
+    top: 0px; 
+     z-index: 3;
 }
 
 
-.phone_half{
-  width: 50vw;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  z-index: 100;
+.floating {
+  display: block;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.bg_img{
-  width: 100vw;
-  height: 100vh;
+.appStore {
+  display: block;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo_img{
-	z-index: 100;
-	position: absolute;
-	float: left;
-  -webkit-transform: translate(45%, 45%);
-  -ms-transform: translate(45%, 45%);
-
-
+.playStore {
+  display: block;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo_text{
-	z-index: 100;
-	position: absolute;
-	font-family: campaign, sans-serif;
-font-weight: 200;
-
-	color: white;
-	width: 40vw;
-	-webkit-transform: translate(45%, 45%);
-  -ms-transform: translate(45%, 45%);
-
-
+.stretch {
+    /* width:100%; */
+    height:100%;
 }
